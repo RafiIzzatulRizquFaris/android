@@ -50,7 +50,6 @@ import androidx.test.espresso.intent.rule.IntentsTestRule;
 import androidx.test.rule.GrantPermissionRule;
 
 import static androidx.test.espresso.Espresso.onView;
-import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 import static junit.framework.TestCase.assertEquals;
@@ -152,7 +151,7 @@ public class FileDisplayActivityIT extends AbstractIT {
         Activity sut = activityRule.launchActivity(null);
 
         onView(withId(R.id.drawer_layout)).perform(DrawerActions.open());
-        onView(withId(R.id.drawer_active_user)).perform(click());
+        //onView(withId(R.id.drawer_active_user)).perform(click());
 
         Screenshot.snapActivity(sut).record();
     }
