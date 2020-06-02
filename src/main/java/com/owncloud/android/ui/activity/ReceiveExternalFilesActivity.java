@@ -705,7 +705,7 @@ public class ReceiveExternalFilesActivity extends FileActivity
     }
 
     private void populateDirectoryList() {
-        setContentView(R.layout.uploader_layout);
+        setContentView(R.layout.receive_external_files);
         setupEmptyList();
         setupToolbar();
         ActionBar actionBar = getSupportActionBar();
